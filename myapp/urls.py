@@ -1,0 +1,14 @@
+# mój plik urls
+
+# importowanie ścieżek
+from django.urls import path
+
+
+# importowanie widoków (funkcji)
+from . import views
+
+urlpatterns = [
+    path("", views.home),
+    path("products/", views.products),
+    path("customer/", views.customer),
+]
